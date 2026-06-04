@@ -88,4 +88,6 @@ print(f'Número de amigos en la lista: {len(LISTA_AMIGOS)}')  # Imprimir el núm
 print('Todos mis amigos: ')
 for amigo in LISTA_AMIGOS:
     print(amigo)
-#
+for i in range(len(LISTA_AMIGOS)):
+    print(f'Índice {i}: {LISTA_AMIGOS[i]}')
+print('Son todos mis Amigos')
