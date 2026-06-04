@@ -115,8 +115,4 @@ LO, LI, LP, LM, LJ, LF, LT = sork
 #python no tiene constantes integradas 
 #la buena costumbre es poner la variable en MAYUSCULA para que se entienda que no se debe cambiar
 MERT = "webos"
-if sirk >= seth_6:
-    print('webos')
-
-
 
