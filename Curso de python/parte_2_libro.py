@@ -1,12 +1,13 @@
+'''Nota: Para pylint siempre poner un str como este que explique el proposito del codigo'''
 #números ææææææ ¢¢„»»»«««»«»«»«»«xzxzxxz+alt_gr
 #enteros
-se = 2+3*4
-re = 2.5*4
-rt = 0.1+0.1
-fd = 0.7+3.4
-fg = 0.2+0.1
-gy, mark = 3*0.1, "pasword"
-#utilizar esto para listas 
+_sen = 2+3*4
+_ren = 2.5*4
+_rtn = 0.1+0.1
+_fdn = 0.7+3.4
+_fgn = 0.2+0.1
+_gyn, mark = 3*0.1, "pasword"
+#utilizar esto para listas
 
 MORK = 3
 MERK = 'kirtuy'
@@ -21,7 +22,7 @@ LISTAS_MEZCLADAS = ['a', 1, 'b', 2, 'c', 3]
 LISTAS_ANIDADAS = [[1, 2, 3], ['a', 'b', 'c'], [True, False]]
 LISTAS_VACIAS = []
 LISTAS_REPETIDAS = [1, 2, 3] * 3
-LISTAS_RANGOS = list(range(1, 11))  
+LISTAS_RANGOS = list(range(1, 11))
 LISTAS_COMPRENSION = [x**2 for x in range(1, 12)]
 LISTAS_COPIADAS = LISTAS_LETRAS.copy()
 LISTAS_CADENA = list('Hola Mundo')
@@ -88,6 +89,16 @@ print(f'Número de amigos en la lista: {len(LISTA_AMIGOS)}')  # Imprimir el núm
 print('Todos mis amigos: ')
 for amigo in LISTA_AMIGOS:
     print(amigo)
-for i in range(len(LISTA_AMIGOS)):
-    print(f'Índice {i}: {LISTA_AMIGOS[i]}')
+
+#for i in range(len(LISTA_AMIGOS)): #iterar sobre los índices de la lista
+#    print(f'Índice {i}: {LISTA_AMIGOS[i]}')
+#print('Son todos mis Amigos')
+
+for i in enumerate(LISTA_AMIGOS):
+    print(f'Índice: {i}')
+#enumerate devuelve una tupla con el índice y el valor, por lo que se debe desempaquetar la tupla
+print('desempaquetado de la tupla')
+print('»»»»')
+for i, amigo in enumerate(LISTA_AMIGOS):
+    print(f'Índice: {i}, Valor: {amigo}')
 print('Son todos mis Amigos')
