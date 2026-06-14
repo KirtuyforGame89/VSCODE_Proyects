@@ -35,3 +35,13 @@ for char in text:
     if char in 'aeiou':
         count += 1
 print(count)
+'''mas ejercicos con listas'''
+#trozo
+#imprimir 3 primeros elementos de una lista
+#imprimir 3 elementos al centro de la lista
+#3 ultimos elementos
+#comida
+#crear lista de comidas y copiarla
+#agregar 1 elemento diferente en cada lista
+#imprimir las dos listas con "for" atribuir la primera a mi y las demas a mis amigos
+#repetir los ejercicos de comida con otro tema de mi preferencia
