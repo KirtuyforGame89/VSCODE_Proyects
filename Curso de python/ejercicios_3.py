@@ -28,3 +28,10 @@ print(cubo)
 print('»»')
 cuadrados = list(rad**2 for rad in range(1, 11))
 print(cuadrados)
+print('»»»')
+text = 'python programming'
+count = 0
+for char in text:
+    if char in 'aeiou':
+        count += 1
+print(count)
