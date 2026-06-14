@@ -34,7 +34,7 @@ for i in range(0, 11, 2):#imprime los números pares del 0 al 10, ya que el paso
 # El argumento step se utiliza para especificar el incremento entre los números generados. Por ejemplo, range(0, 11, 2) generará los números pares del 0 al 10 (0, 2, 4, 6, 8, 10).
 print('»»»»')
 # La función range() es comúnmente utilizada en bucles for para iterar(recorrerlos uno por uno) sobre un rango de números o para generar índices para acceder a elementos de una lista.
-# Por ejemplo, 
+# Por ejemplo,
 for i in range(len(AMIGOS)):
     print(f'Índice {i}: {AMIGOS[i]}')
 #iterará sobre los índices de la lista AMIGOS, permitiendo acceder a cada amigo utilizando AMIGOS[i]
@@ -77,3 +77,60 @@ sum(record) #suma de los numeros de la lista
 #meter todo en una sola linea con list comprehension
 squares = [x**2 for x in range(1, 11)]
 print(squares)
+
+'''trosos de listas - slice'''
+#slice es una forma de obtener una parte de una lista, se puede usar para obtener un rango de elementos de una lista.
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+#La sintaxis para usar slice es: lista[inicio:fin:paso]
+
+#inicio es el índice del primer elemento que se desea obtener, fin es el índice del último elemento que se desea obtener (no incluido)
+print(numbers[2:5]) #imprime los elementos desde el índice 2 hasta el índice 4 (no incluido el índice 5)
+
+#Si se omite el inicio, se asume que es 0.
+print(numbers[:5]) #imprime los elementos desde el inicio de la lista hasta el índice 4 (no incluido el índice 5)
+
+# Si se omite el fin, se asume que es el final de la lista.
+print(numbers[5:]) #imprime los elementos desde el índice 5 hasta el final de la lista
+
+# paso es el número de elementos que se desea saltar entre cada elemento obtenido.
+print(numbers[1::2]) #imprime los elementos desde el índice 1 hasta el  final de la lista, saltando 2 elementos
+
+# Si se omite el paso, se asume que es 1.
+print('paso de 1?', numbers[2:9:],) #imprime los elementos desde el índice 2 hasta el índice 8 (con paso de 1?)
+
+# Si se omite el inicio y el fin, se asume que es toda la lista.
+print(numbers[::2]) #imprime los elementos desde el inicio de la lista hasta el final de la lista, saltando 2 elementos
+
+print('»»»»')
+
+'''slice con for'''
+for number in numbers[1::2]: #imprime los elementos desde el índice 1 hasta el  final de la lista, saltando 2 elementos
+    print(number)
+print('»»»»»')
+for durmiente in AMIGOS[0:3]: #imprime los elementos desde el índice 0 hasta el índice 2 (no incluido el índice 3)
+    print(f'Tu pesadilla comiensa {durmiente.title()}')
+print('»»»»»')
+
+#copiar una lista
+#se pueden tomar los elementos de una lista y meterse en otra variable
+Durmientes = AMIGOS[:]
+print(Durmientes)
+print('»»copiar la lista Amigos en una nueva "Durmientes»»\n')
+
+#aqui unas diferencias en los metodos de copia que se me ocurrieron
+Durmientes = [AMIGOS[:1] + AMIGOS[-3:]]
+print(Durmientes)
+print('»»lista de una sola lista»»\n')
+
+Durmientes = [AMIGOS[:1], AMIGOS[-3:]]
+print(Durmientes)
+print('»»lista de listas»»\n')
+
+Durmientes = AMIGOS[:1] + AMIGOS[-3:]
+print(Durmientes)
+print('»»una lista nomas»»\n')
+
+Durmientes = AMIGOS[:1], AMIGOS[-3:]
+print(Durmientes)
+print('»»una tupla de listas»»')
+
