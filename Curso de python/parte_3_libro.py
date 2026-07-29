@@ -133,4 +133,3 @@ print('»»una lista nomas»»\n')
 Durmientes = AMIGOS[:1], AMIGOS[-3:]
 print(Durmientes)
 print('»»una tupla de listas»»')
-

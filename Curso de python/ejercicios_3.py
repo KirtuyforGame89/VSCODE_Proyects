@@ -45,3 +45,13 @@ print(count)
 #agregar 1 elemento diferente en cada lista
 #imprimir las dos listas con "for" atribuir la primera a mi y las demas a mis amigos
 #repetir los ejercicos de comida con otro tema de mi preferencia
+print('mas ejercicos')
+print(primero[:3])
+print('»»»»»')
+centro = len(primero) // 2
+print(primero[centro-1:centro+2])
+print('»»»»»')
+print(primero[-3:])
+print('»»»»»')
+platillos = ['verduras', 'arroces', 'pastas', 'niños', 'sopas', 'cremas', 'carnes', 'frutas', 'peces', 'jugos', 'batidos', 'anfibios', 'insectos']
+print(type(platillos))
