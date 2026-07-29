@@ -44,7 +44,6 @@ print(count)
 #crear lista de comidas y copiarla
 #agregar 1 elemento diferente en cada lista
 #imprimir las dos listas con "for" atribuir la primera a mi y las demas a mis amigos
-#repetir los ejercicos de comida con otro tema de mi preferencia
 print('mas ejercicos')
 print(primero[:3])
 print('»»»»»')
@@ -55,3 +54,19 @@ print(primero[-3:])
 print('»»»»»')
 platillos = ['verduras', 'arroces', 'pastas', 'niños', 'sopas', 'cremas', 'carnes', 'frutas', 'peces', 'jugos', 'batidos', 'anfibios', 'insectos']
 print(type(platillos))
+orden_platillos = platillos.copy()
+print('»»»»»')
+orden_platillos.append(input('Agrega un platillo a la lista copiada: '))
+platillos.append(input('Agrega un platillo a la lista original: '))
+orden_platillos.sort()
+print('»»»»»')
+for plato in platillos:
+    print('Platos originales: ' + plato)
+
+print('»»»»»')
+print('Platos y un solo cambio de un pana')
+for plato in orden_platillos:
+    print('»»' + plato)
+print('»»»»»')
+print(f'Platillos en orden: {orden_platillos}')
+print(f'Platillos originales:{platillos}')
