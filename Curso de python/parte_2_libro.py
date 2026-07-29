@@ -76,8 +76,10 @@ print(f'¿Está "Marte" en la lista de amigos? {"Marte" in LISTA_AMIGOS}')  # Ve
 
 #ordenar listas
 LISTA_AMIGOS.sort()  # Ordenar la lista alfabéticamente
+#sot() significa ordenar se aplica directamente sobre la lista y la modifica ella misma (no crea una lista nueva)
 print(f'Lista de amigos ordenada: {LISTA_AMIGOS}')  # Imprimir la lista ordenada
 # Ordenar la lista en orden inverso
+#sorted() 'ordenado' es una funcion que crea una lista nueva ya ordenada dejando la original intacta
 print(f'Lista de amigos ordenada en orden inverso: {sorted(LISTA_AMIGOS, reverse=True)}')  # Imprimir la lista ordenada en orden inverso
 # Ordenar la lista por la longitud de los nombres
 print(f'Lista de amigos ordenada por longitud: {sorted(LISTA_AMIGOS, key=len)}')  # Imprimir la lista ordenada por longitud
